@@ -19,13 +19,9 @@ Settings & variables
 /**
 Custom imports
 */
-@import "animations";
 @import "modifiers";
 @import "components";
 @import "hero";
-@import "intro";
-@import "featured";
-@import "image_pullout";
 
 /**
 Custom resets
@@ -36,4 +32,11 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
 }
