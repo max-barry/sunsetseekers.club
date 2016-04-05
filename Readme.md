@@ -3,6 +3,7 @@ One day this will be a site about sunsets. Until then, it's just goofing around 
 
 [sunseekers.club](http://sunseekers.club)
 
+## The Code
 All the text is live. There are pseudo elements with the bands over the text which combines with the blend mode to make something unorthodox.
 
 ```
