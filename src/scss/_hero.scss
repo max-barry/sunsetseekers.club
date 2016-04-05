@@ -1,0 +1,86 @@
+.hero {
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        z-index: 1;
+        opacity: 0.1;
+    }
+}
+
+.hero__action {
+    position: absolute;
+    bottom: 3vh;
+    left: 3vh;
+    z-index: 99;
+}
+
+.hero__header {
+    font-size: 17vw;
+    line-height: 0.7;
+    text-align: center;
+    position: relative;
+    top: -3%;
+    // animation: hue_rotate 4s infinite;
+    // text-shadow: 3px 3px 3px hsla(50,98%,43%,1);
+    // text-shadow: 1px 1px 3px black;
+    // opacity: 0.7;
+    mix-blend-mode: overlay;
+    color: white;
+    // text-shadow: 1px 1px 0px black;
+    z-index: 2;
+    // mix-blend-mode: difference;
+    // color: #FF9900;
+    &:after, &:before {
+        // Censor bars
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // background-size: 100% auto;
+        background-size: 95% auto;
+        background-repeat: no-repeat;
+
+    }
+    &:after {
+        background-image: url("/img/brush--orange-flip.png");
+        background-position: center 100%;
+    }
+    &:before {
+        background-image: url("/img/brush--orange.png");
+        background-position: center 14%;
+    }
+    &:before, &:after {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+        transition: all 750ms ease-in;
+    }
+}
+
+body:not(.--unlock) {
+    overflow: hidden;
+}
+
+body.--unlock {
+    .cssclippathpolygon & .hero__header {
+        &:before {
+            -webkit-clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+            clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+        }
+        &:after {
+            -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        }
+    }
+    html:not(.cssclippathpolygon) & .hero__header {
+        &:after, &:before {
+            height: 0%;
+        }
+    }
+}

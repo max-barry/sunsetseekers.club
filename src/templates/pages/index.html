@@ -1,0 +1,48 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+    <main>
+        <article class="--fullbleed --flex-center --flex hero">
+            <div class="fullbleed_video">
+                <video class="fullbleed_video__video" autoplay loop>
+                    {# <source src="/video/All-set.mp4" type="video/mp4"> #}
+                    <source src="/video/Nature-Sunset.mp4" type="video/mp4">
+                    {# <source src="/video/342964571.mp4" type="video/mp4"> #}
+                    {# <source src="/video/343732582.mp4" type="video/mp4"> #}
+                    {# <source src="/video/343683750.mp4" type="video/mp4"> #}
+                </video>
+            </div>
+            <h1 class="hero__header --m-reset">Sunset<br>Seekers</h1>
+            <button data-fullscreen class="button button--simple hero__action">Click here or go fullscreen to enter the club</button>
+        </article>
+        <article class="--fullbleed --flex-center --flex --rel intro">
+            <h2 class="--m-reset intro__header">The <em data-copy="Sunset Seekers Club">Sunset Seekers Club</em> is a secret collection of publicly available non-secret sunsets</h2>
+            <span class="emphasis_line emphasis_line__upper"></span>
+            <span class="emphasis_line emphasis_line__lower"></span>
+        </article>
+        <article class="--fullbleed featured --rel">
+            <section class="frame --rel">
+                <div class="frame__border">
+                    <img src="https://lh3.ggpht.com/20F-fZ3iDGRMzXxRxsQIouFsHKhuP45QMCT2vJXOMTRe-WZ0cvR1SQZruCUZW_36BXk=h900" class="ugc">
+                    <span class="frame__border_edge"></span>
+                </div>
+            </section>
+            <span class="emphasis_line emphasis_line__frame"></span>
+        </article>
+    </main>
+{#     <aside class="--flex --flex-center">
+        <section class="aside__image aside__component">
+            <img class="" src="https://lh3.ggpht.com/20F-fZ3iDGRMzXxRxsQIouFsHKhuP45QMCT2vJXOMTRe-WZ0cvR1SQZruCUZW_36BXk=h900">
+        </section>
+        <section class="aside__details aside__component">DETAILS</section>
+        <section class="aside__extra aside__component">EXTRA</section>
+    </aside> #}
+
+{# AXIS font #}
+
+{% endblock %}
+
+{% block extrajs %}
+<!-- Template specific <script> tags should go here -->
+{% endblock %}

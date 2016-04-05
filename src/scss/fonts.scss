@@ -1,0 +1,23 @@
+/**
+Import font-face
+*/
+$fontpath: "/fonts/";
+
+@font-face {
+    font-family: 'Rise-Regular';
+    src: url('#{$fontpath}Rise-Regular.eot?#iefix') format('embedded-opentype'), url('#{$fontpath}Rise-Regular.otf') format('opentype'), url('#{$fontpath}Rise-Regular.woff') format('woff'), url('#{$fontpath}Rise-Regular.ttf') format('truetype'), url('#{$fontpath}Rise-Regular.svg#Rise-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'axisbold';
+    src: url('#{$fontpath}axis-webfont.eot');
+    src: url('#{$fontpath}axis-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontpath}axis-webfont.woff2') format('woff2'),
+         url('#{$fontpath}axis-webfont.woff') format('woff'),
+         url('#{$fontpath}axis-webfont.ttf') format('truetype'),
+         url('#{$fontpath}axis-webfont.svg#axisbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
