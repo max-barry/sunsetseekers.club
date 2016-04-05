@@ -40,3 +40,13 @@ html {
 ::-moz-selection {
   background: #ffb7b7; /* Gecko Browsers */
 }
+
+a {
+    position: absolute;
+    left: 3vw;
+    bottom: 3vw;
+    color: white;
+    z-index: 99;
+    text-decoration: underline;
+    font-family: $heading-font-family;
+}

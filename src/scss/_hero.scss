@@ -25,16 +25,12 @@
     text-align: center;
     position: relative;
     top: -3%;
-    // animation: hue_rotate 4s infinite;
-    // text-shadow: 3px 3px 3px hsla(50,98%,43%,1);
-    // text-shadow: 1px 1px 3px black;
-    // opacity: 0.7;
     mix-blend-mode: overlay;
     color: white;
-    // text-shadow: 1px 1px 0px black;
     z-index: 2;
-    // mix-blend-mode: difference;
-    // color: #FF9900;
+    @media #{$small-all} {
+        font-size: 26vw;
+    };
     &:after, &:before {
         // Censor bars
         content: "";
